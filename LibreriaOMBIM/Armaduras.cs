@@ -5,6 +5,7 @@ using Tekla.Structures.Datatype;
 using Tekla.Structures.Geometry3d;
 using Tekla.Structures.Model;
 using Distance = Tekla.Structures.Datatype.Distance;
+using LibreriaOMBIM;
 
 namespace LibreriaOMBIM.Armaduras
 {
@@ -178,7 +179,9 @@ namespace LibreriaOMBIM.Armaduras
             
             
             if (!rebarGroup.Insert())
-                Console.WriteLine("Insert failed!");
+            {
+                LoggerHelper.Error("Insert failed in EstriboFormaC");
+            }
 
         }
 
@@ -227,7 +230,9 @@ namespace LibreriaOMBIM.Armaduras
             
             
             if (!rebarGroup.Insert())
-                Console.WriteLine("Insert failed!");
+            {
+                LoggerHelper.Error("Insert failed in EstriboFormaC2");
+            }
 
         }
 
@@ -270,8 +275,9 @@ namespace LibreriaOMBIM.Armaduras
             
             
             if (!rebarGroup.Insert())
-                Console.WriteLine("Insert failed!");
-
+            {
+                LoggerHelper.Error("Insert failed in EstriboHook135");
+            }
 
             return rebarGroup;
 

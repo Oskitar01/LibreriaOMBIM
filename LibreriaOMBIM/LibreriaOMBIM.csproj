@@ -90,5 +90,6 @@
     <PackageReference Include="Trimble.Remoting" Version="1.0.2" />
     <PackageReference Include="Trimble.Technology.Msglib" Version="2.2.22326" />
     <PackageReference Include="Trimble.Technology.Rkit" Version="2.2.22312" />
+    <PackageReference Include="NLog" Version="4.7.15" />
   </ItemGroup>
 </Project>
